@@ -1,0 +1,118 @@
+<div class="characters-section">
+  <mat-card class="card m-2" *ngFor="let character of characters">
+    <mat-card-header>
+      <mat-card-title>{{ character.name }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="character.avatar" [alt]="character.name" />
+    <mat-card-content>
+      <div class="row align-items-center mb-3">
+        <div class="col-2">
+          <span><i class="fas fa-heartbeat fa-2x"></i></span>
+        </div>
+        <div class="col-10 text-center pl-4 pr-4">
+          <span>87 / 87</span>
+          <div class="progress">
+            <div
+              class="progress-bar bg-danger"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="row pl-2 character-stats">
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="fas fa-fist-raised"></i></span>
+              <span>FUE</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>65</span>
+          </div>
+        </div>
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="fas fa-praying-hands"></i></span>
+              <span>DES</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>65</span>
+          </div>
+        </div>
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="fas fa-shield-alt"></i></span>
+              <span>POD</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>65</span>
+          </div>
+        </div>
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="fas fa-brain"></i></span>
+              <span>CON</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>65</span>
+          </div>
+        </div>
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="fas fa-user-tie"></i></span>
+              <span>APA</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>65</span>
+          </div>
+        </div>
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="fas fa-user-graduate"></i></span>
+              <span>EDU</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>65</span>
+          </div>
+        </div>
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="fas fa-weight-hanging"></i></span>
+              <span>TAM</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>65</span>
+          </div>
+        </div>
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="far fa-eye"></i></span>
+              <span>INT</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>65</span>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
