@@ -10,12 +10,16 @@
           <span><i class="fas fa-heartbeat fa-2x"></i></span>
         </div>
         <div class="col-10 text-center pl-4 pr-4">
-          <span>87 / 87</span>
+          <span
+            >{{ character.currentHealth }} / {{ character.healthPoints }}</span
+          >
           <div class="progress">
             <div
               class="progress-bar bg-danger"
               role="progressbar"
-              style="width: 100%"
+              [style.width.%]="
+                (character.currentHealth / character.healthPoints) * 100
+              "
               aria-valuenow="100"
               aria-valuemin="0"
               aria-valuemax="100"
