@@ -1,5 +1,6 @@
 .characters-section {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .card {
@@ -8,4 +9,10 @@
 
 .character-stats {
   font-size: 12px;
+}
+
+.actionButton {
+  position: absolute;
+  right: 10%;
+  text-transform: uppercase;
 }
