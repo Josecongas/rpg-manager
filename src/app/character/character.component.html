@@ -2,9 +2,11 @@
   <mat-card class="card ml-1 mr-1" *ngFor="let character of characters">
     <mat-card-header>
       <mat-card-title>{{ character.name }}</mat-card-title>
-      <button class="btn btn-success btn-sm actionButton">
-        <i class="fas fa-exclamation"></i> Action
-      </button>
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
     </mat-card-header>
     <img mat-card-image [src]="character.avatar" [alt]="character.name" />
     <mat-card-content>
@@ -117,6 +119,17 @@
           </div>
           <div class="text-center">
             <span>{{ character.intelect }}</span>
+          </div>
+        </div>
+        <div class="col-4 p-1">
+          <div class="row">
+            <div class="col">
+              <span class="mr-2"><i class="fas fa-running"></i></span>
+              <span>MOV</span>
+            </div>
+          </div>
+          <div class="text-center">
+            <span>{{ character.movement }}</span>
           </div>
         </div>
       </div>
